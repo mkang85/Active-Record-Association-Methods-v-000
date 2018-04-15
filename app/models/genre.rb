@@ -17,7 +17,7 @@ class Genre < ActiveRecord::Base
     array = []
     binding.pry
     self.artists.each {|a| array << a.name}
-
+    array
   end
 
 end
